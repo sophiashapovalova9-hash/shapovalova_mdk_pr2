@@ -1,0 +1,46 @@
+﻿<Window x:Class="shapovalova_pr2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:shapovalova_pr2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="#ea819f">
+            <Image Width="45" Height="45" HorizontalAlignment="Left" Margin="5"/>
+            <TextBlock Text="Вариант 2" FontSize="36" FontFamily="Arial Narrow"
+                       Margin="330,9,330,10" Foreground="White"
+                       />
+        </Grid>
+
+        <StackPanel x:Name="MenuPanel" Grid.Row="1"
+                    VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button x:Name="btnTask1" Content="Задача 1" Width="120" Height="29"
+                    FontSize="18" FontFamily="Arial Narrow" Margin="0,0,0,20"
+                    Click="btnTask1_Click"/>
+            <Button x:Name="btnTask2" Content="Задача 2" Width="120" Height="29"
+                    FontSize="18" FontFamily="Arial Narrow" Margin="0,0,0,20"
+                    Click="btnTask2_Click"/>
+            <Button x:Name="btnTask3" Content="Задача 3" Width="120" Height="29"
+                    FontSize="18" FontFamily="Arial Narrow" Margin="0,0,0,20"
+                    Click="btnTask3_Click"/>
+            <Button x:Name="btnTask4" Content="Задача 4" Width="120" Height="29"
+                    FontSize="18" FontFamily="Arial Narrow" Margin="0,0,0,20"
+                    Click="btnTask4_Click"/>
+            <Button x:Name="btnTask5" Content="Задача 5" Width="120" Height="29"
+                    FontSize="18" FontFamily="Arial Narrow"
+                    Click="btnTask5_Click"/>
+        </StackPanel>
+
+        <Frame x:Name="FrmMain" Grid.Row="1"
+               NavigationUIVisibility="Hidden"
+               Visibility="Collapsed"
+               Background="White"/>
+    </Grid>
+</Window>

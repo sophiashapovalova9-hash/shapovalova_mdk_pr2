@@ -1,0 +1,44 @@
+﻿<Page x:Class="shapovalova_pr2.Pages.Page3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:shapovalova_pr2.Pages"
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page3"
+      Background="White">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" FontSize="20"
+                   Text="В последовательности целых чисел найти максимально длинную подпоследовательность, в которой каждый следующий элемент делится нацело на предыдущий. Числа вводятся через пробел."
+                   FontFamily="Arial Narrow" TextWrapping="Wrap"/>
+
+        <StackPanel Grid.Row="1" Margin="0,15" Orientation="Horizontal">
+            <TextBlock Text="Числа: " FontSize="16"/>
+            <TextBox x:Name="txtInput" Width="400"/>
+        </StackPanel>
+
+        <Button Grid.Row="2" x:Name="btnCalculate" Content="Вычислить"
+                Width="150" Height="35" HorizontalAlignment="Center"
+                Margin="0,10,0,10" FontSize="16"
+                Click="btnCalculate_Click"/>
+
+        <TextBox Grid.Row="3" x:Name="txtResult"
+                 IsReadOnly="True" AcceptsReturn="True" TextWrapping="Wrap"
+                 VerticalScrollBarVisibility="Auto"/>
+
+        <Button Grid.Row="4" x:Name="btnBack" Content="Назад"
+                Width="120" Height="35" HorizontalAlignment="Center"
+                Margin="0,10,0,0" FontSize="16"
+                Click="btnBack_Click"/>
+    </Grid>
+</Page>
