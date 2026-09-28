@@ -18,15 +18,7 @@ namespace shapovalova_pr2
 {
     public partial class MainWindow : Window
     {
-        //новое новое изменение//
-
-        //новый комментарий//
-
-        //новое новое изменение//
-
-        //новый комментарий//
-
-        //новое нвоое изменение//
+        //СРАВНЕНИЕ//
 
         public MainWindow()
         {
