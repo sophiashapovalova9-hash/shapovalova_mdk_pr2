@@ -19,6 +19,19 @@ namespace shapovalova_pr2
     public partial class MainWindow : Window
     {
         //новый комментарий//
+
+        //новый комментарий//
+
+        //новый комментарий//
+
+        //новый комментарий//
+
+        //новый комментарий//
+
+        //новый комментарий//
+
+        //новый комментарий//
+
         public MainWindow()
         {
             InitializeComponent();
